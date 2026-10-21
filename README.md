@@ -10,7 +10,7 @@
 
 ---
 
-![Campus Rhythm home](assets/home-hero.png)
+![Campus Rhythm home](assets/home-screenshot.png)
 
 ## What is Campus Rhythm?
 
@@ -33,10 +33,6 @@ Knowing a deadline is not the same as having time to prepare for it. Campus Rhyt
 |---|---|
 | ![Web week view + to-do](assets/screens-web-tasks.jpg) | ![iOS core flows](assets/screens-ios-core.jpg) |
 | Week/day/month calendar, import preview, to-do with Done & Undo | Onboarding import, calendar, things-to-do |
-
-![iOS AI task draft](assets/screens-ios-ai-task.jpg)
-
-![iOS calendar views](assets/screens-ios-calendar.jpg)
 
 - **One proactive next step** — Today surfaces the next feasible action based on deadlines, remaining effort and your rest windows.
 - **AI drafts, you decide** — ask Rhythm for a suggested time; the draft is validated against fixed classes, rest time and workload before you confirm. The AI never writes to your plan directly.
