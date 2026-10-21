@@ -25,6 +25,12 @@ Started from a student project at **HKUST**, built for a universal problem: scat
 - **Stay close to the day** — iOS Home Screen widgets, Live Activities and local notifications keep the next step visible.
 - **Respect your privacy** — read-only Apple Health (sleep, steps, exercise minutes) stays on device and is not sent to the cloud or the AI.
 
+## Home
+
+![Campus Rhythm home screen](assets/home-screenshot.png)
+
+*Live product homepage — your deadlines, your next step, and a preview of the week ahead.*
+
 ## Quick start
 
 1. Open **https://campus-rhythm-one.vercel.app**
