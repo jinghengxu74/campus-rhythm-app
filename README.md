@@ -1,81 +1,155 @@
+<div align="center">
+
 # Campus Rhythm
 
-**A proactive planner for tight schedules — understand your day before it runs you.**
+**Turn scattered commitments into one feasible next step.**
 
-🌐 **Try it live: https://campus-rhythm-one.vercel.app** (web)
+A proactive planner for classes, deadlines and everyday goals.
 
-📱 **iOS app: in development** (Expo / React Native)
+[Try the web app](https://campus-rhythm-one.vercel.app) · [User guide](GUIDE.md) · [Architecture](docs/ARCHITECTURE.md) · [Evaluation](docs/EVALUATION.md) · [Roadmap](docs/ROADMAP.md)
 
-📖 **How to use it: [User Guide](GUIDE.md)**
+**Web prototype available · iOS in development · v1.1.0 · Updated 21 October 2026**
 
----
+</div>
 
-![Campus Rhythm home](assets/home-screenshot.png)
+Campus Rhythm brings commitments into a shared calendar, suggests a useful next action, and helps you record what actually gets done. A deadline tells you **when work is due**; a work session tells you **when you will do it**. The product keeps those two things separate.
 
-## What is Campus Rhythm?
+Started at HKUST, with students as the first audience. The longer-term direction is everyday planning for people with tight schedules; usefulness beyond students still needs validation.
 
-Campus Rhythm is an **AI-assisted planner that connects your commitments to a feasible next step**. It brings classes, deadlines, events and personal goals into **one reviewed plan**, and builds a rhythm around what you actually do — not just what you planned.
+> This is the public product showcase and documentation repository. Application source code is private. The web app is a working prototype; the iOS app is not an App Store or TestFlight release.
 
-Knowing a deadline is not the same as having time to prepare for it. Campus Rhythm treats a deadline and the work required to meet it as different things, and helps you fit real work into a real day. The goal is proactive life management: understand your day-to-day activities and trends, and act on them before they become problems.
+## See the product
 
-**Started from HKUST**, built for a universal problem: scattered commitments and too little time. Students are the first users — especially those who care about both **time management and health** — and the same loop applies to anyone with a tight schedule, which is why professionals are the natural next audience.
+### Web — Today
 
-## The core loop: import → plan → do → review
+![Campus Rhythm desktop Today view showing one next step, an explanation of its priority, Done and Undo controls, upcoming deadlines and shortcuts](assets/web-today-2026-10-21.png)
 
-- **Import** — preview Canvas deadlines and class/event calendars (ICS), select what to keep, review before saving. Imports are reviewed snapshots, not blind syncs.
-- **Plan** — the AI-assisted planner weighs due dates, remaining effort, fixed commitments and your chosen rest windows. Every suggestion is a **draft you review**; a rule check rejects impossible slots; nothing is saved without your confirmation.
-- **Do** — record Done and actual minutes, split heavy tasks into sessions, keep history, and **undo** any change.
-- **Review** — weekly reviews based on what you actually did, so the plan follows your real rhythm.
+*Desktop screenshot supplied by the project owner, 21 October 2026. It shows the current interface and example commitments visible in that workspace, not evidence of user outcomes. Open the image for full resolution.*
 
-## Product
+Today puts the next action above the full schedule. The interface explains the recommendation, exposes completion and undo, and keeps the calendar, imports and task list close by. Unknown assessment weights are explicitly marked as unverified.
 
-| Web (live) | iOS (in development) |
-|---|---|
-| ![Web week view + to-do](assets/screens-web-tasks.jpg) | ![iOS core flows](assets/screens-ios-core.jpg) |
-| Week/day/month calendar, import preview, to-do with Done & Undo | Onboarding import, calendar, things-to-do |
+### iOS — development preview
 
-- **One proactive next step** — Today surfaces the next feasible action based on deadlines, remaining effort and your rest windows.
-- **AI drafts, you decide** — ask Rhythm for a suggested time; the draft is validated against fixed classes, rest time and workload before you confirm. The AI never writes to your plan directly.
-- **Stay close to the day** — iOS Home Screen widgets, Live Activities and local notifications keep the next step visible.
-- **Respect your privacy** — read-only Apple Health (sleep, steps, exercise minutes) stays on device and is not sent to the cloud or the AI.
+<img src="assets/screens-ios-core.jpg" alt="Earlier iOS development screenshots: import onboarding, calendar and task completion" width="900">
+
+*Earlier development screenshots, retained to show the native flow. They are not screenshots of a distributed release. Physical-device HealthKit acceptance and the full native journey remain open.*
+
+## Why Campus Rhythm?
+
+Classes, deadlines and personal plans often live in different places. Copying them into another calendar still leaves the difficult decisions: what matters now, how much preparation remains, and where the work can fit.
+
+Campus Rhythm is built around three decisions:
+
+- **Start with existing commitments.** Preview calendar imports and choose what to save instead of retyping the semester.
+- **Make the next step small enough to act on.** Use deadlines, remaining effort, fixed commitments and saved rest preferences to inform planning.
+- **Keep the user in control.** Review suggestions before saving, record completion separately from scheduled time, and undo supported changes.
+
+The design goal is lower planning effort. Reduced stress, better grades and improved sleep have not been demonstrated.
+
+## The workflow
+
+**Import → review → plan → confirm → do → reflect**
+
+| Step | What you do | What the product preserves |
+| --- | --- | --- |
+| Import | Bring in supported Canvas feeds or an ICS class/event export. | A preview before anything is saved. |
+| Review | Select items and check dates, timezones and missing details. | Source-derived dates; no invented grade weights. |
+| Plan | Add effort estimates and ask Rhythm for help finding time. | A distinction between due dates and work sessions. |
+| Confirm | Inspect or edit the proposed change, then save. | Local rule checks and explicit confirmation. |
+| Do | Mark a task Done and record progress; undo when needed. | Completion history rather than assuming calendar time was productive. |
+| Reflect | Open the weekly review. | A summary based on recorded activity, with missing data left unknown. |
+
+**Illustrative example:** a task needs two hours before Friday, but Thursday contains fixed classes. The intended flow is to review feasible preparation sessions, confirm them, then record actual progress. This example describes the workflow; it is not a measured scheduling benchmark.
+
+## Try it
+
+1. Open the [web app](https://campus-rhythm-one.vercel.app). Use Google/email sign-in for an account workspace, or Local mode where offered.
+2. Start with **Import**. Preview a supported calendar feed or `.ics` file, select a small set, and confirm.
+3. Open **Today** or **Calendar**. Add a task with a due date and estimated effort, then ask **Rhythm** to help plan it.
+4. Review and confirm the draft. Try **Done → Undo → Weekly review** to follow the complete loop.
+
+The [user guide](GUIDE.md) covers first use, imports, planning, recovery and troubleshooting. No developer setup is needed to try the hosted app. Cloning this showcase does not install the application.
+
+## Capabilities and current boundaries
+
+| Area | Current capability | Boundary |
+| --- | --- | --- |
+| Today and calendar | Next-step view, month/week/day calendar and task navigation. | Recommendations depend on the information entered or imported. |
+| Imports | Preview/select/save, reimport deduplication and batch management. | Snapshots, not continuous Canvas or Outlook synchronization. |
+| Planning assistant | Natural-language interpretation, local planning rules and reviewed drafts. | Cloud AI needs sign-in and service availability; no autonomous calendar writes. |
+| Execution and review | Done, progress, supported undo and weekly review. | Scheduled work is not counted as completed work. |
+| Accounts | Supabase authentication and versioned account-plan sync. | Independent new-user and multi-device acceptance remain incomplete. |
+| Native surfaces | iOS widget, Live Activity and reminder implementations. | Development build; simulator evidence does not establish physical-device reliability. |
+| Wellness | Manual records plus a read-only native Apple Health module. | Real iPhone readings and health-informed scheduling still need acceptance work. |
+| Community | Exploratory sharing/community direction. | A complete social scheduling experience is not claimed. |
 
 ## How it works
 
-![Architecture](assets/architecture.jpg)
+```mermaid
+flowchart LR
+    I[Supported calendar / ICS] --> P[Preview and select]
+    P --> W[Local workspace]
+    U[User message] --> G[Authenticated AI gateway]
+    G --> M[Configured model provider]
+    M --> D[Validated intent]
+    W --> R[Local planning rules]
+    D --> R
+    R --> C[Review and confirm]
+    C --> W
+    W <--> S[Versioned account sync]
+    W --> F[Done / Undo / Weekly review]
+```
 
-- **Account** — Google/email sign-in via Supabase Auth; one account workspace across web and iOS; row-level security keeps every plan private.
-- **Commitments** — Canvas/ICS imports are previewed and selected before saving; dates, effort and rest are checked locally; confirm, history and undo on every change.
-- **AI planning** — the web/iOS client sends plan context to a Vercel API, which holds the OpenRouter key **server-side only**; the model returns a draft; a rule check validates dates and conflicts; the user approves; then it saves.
-- **Build lane** — design in Figma → reviewed source on GitHub → Vercel (web + API) and Expo (iOS) → browser and device checks.
+The model interprets a request; local code matches tasks, checks dates and conflicts, and prepares the change for review. The current request payload contains the message, scope and planning date, rather than an automatic upload of the calendar database. Text typed into a cloud-AI message is still transmitted to the configured provider.
 
-## Engineering status
+| Layer | Technology and role |
+| --- | --- |
+| Interface | TypeScript, React, Expo SDK 57, Expo Router, React Native and React Native Web. |
+| Account data | Supabase Auth and Postgres; row-level security and revision-based writes. |
+| AI gateway | Vercel API; server-side provider credentials, authentication and request budgets. OpenRouter integration is implemented. |
+| Native integration | HealthKit read module, Expo notifications, widgets and Live Activities. |
+| Delivery | Vercel for web/API; Expo native development builds; checks defined in the private source repository. |
 
-- **201 automated tests** passing across calendar logic, imports, planner rules and API behaviour.
-- Calendar engine verified against a **real semester timetable**: 10 recurring series / 126 occurrences matched an independent reference calculation exactly.
-- Web app deployed on Vercel production with instant rollback; Supabase (Singapore) Postgres with auth and row-level security.
-- iOS app built with Expo / React Native + TypeScript; currently in development.
+See [architecture and trade-offs](docs/ARCHITECTURE.md) for data boundaries, synchronization and the cloud/local distinction.
 
-## Honest status & limitations
+## Engineering evidence
 
-Campus Rhythm is a working prototype, not an App Store release.
+On **21 October 2026**, the private source checkout at `06cb519` passed **201 automated tests** and TypeScript checking. The standard Expo application lint check is recorded separately in the [evaluation notes](docs/EVALUATION.md). These checks cover implementation behavior; they do not establish product adoption or a security certification.
 
-- ✅ Live web product with sign-in, import, planning, Done/Undo and weekly review.
-- 🔄 iOS app in development — not yet distributed; on-device Apple Health reading is implemented but pending verification on a real iPhone.
-- 🔄 Real-user pilot just starting — feedback is collected through a short in-app survey; no outcome claims (reduced stress, better grades, fewer missed deadlines) are made until pilot data exists.
-- ⏳ Continuous external sync (Outlook, live Canvas updates) is planned, not shipped.
+A documented timetable regression check on **19 October 2026** compared **10 recurring series / 126 occurrences** with a separate reference calculation. This is one real timetable export, not a representative import benchmark or proof of enrollment.
 
-## Roadmap — what we're working on
+The [evaluation notes](docs/EVALUATION.md) distinguish checks rerun for this documentation update, earlier maintainer verification and unfinished acceptance. The public showcase does not contain the source or a reproducible application test suite.
 
-1. **Simplify the user experience and functions** — fewer steps from commitment to next step; a cleaner first page.
-2. **Seamless AI features** — an agent that helps you schedule proactively: turn "finish my Engineering assignment by Friday" into reviewed, feasible sessions without form-filling.
-3. **Health schedule** — deeper Apple Health integration so sleep and recovery genuinely constrain what's suggested.
-4. **Community / social schedule** — plan around friends, club commitments and shared time, not just solo tasks.
-5. **Pilot programme** — 5 students complete the full journey unassisted → audit 30 AI planning scenarios → 20–30 student pilot. Measured by planning time, follow-through and unwanted alerts — not promises.
+## Privacy and user control
 
-## Feedback
+- Review imports and assistant drafts before saving them.
+- Treat calendar feed URLs as private credentials; do not put them in issues or screenshots.
+- The native Apple Health read path is separate from account-plan sync and is not automatically sent to cloud AI. Manual wellness records have separate cloud-consent controls.
+- Production Health-mode cloud AI is disabled in the reviewed implementation.
+- Keep missing readings and unverified grading weights explicit.
 
-Found something confusing? The short in-app survey (~4 minutes) directly shapes the next iteration: **https://forms.gle/8ue3LXgotZLrxNzX9**
+Read the [data and privacy boundaries](docs/PRIVACY.md) before connecting calendars or using cloud AI.
+
+## What comes next
+
+The immediate priorities are an unassisted new-student journey, feedback-led simplification, and physical-iPhone acceptance. More seamless reviewed scheduling, health-aware planning and shared-time discovery are later work. See the [roadmap and acceptance criteria](docs/ROADMAP.md); no release dates or pilot outcomes are promised.
+
+## Documentation and feedback
+
+| Resource | Use it for |
+| --- | --- |
+| [User guide](GUIDE.md) | First use and common problems. |
+| [Product brief](docs/PRODUCT.md) | Audience, decisions and intended experience. |
+| [Architecture](docs/ARCHITECTURE.md) | System responsibilities and technical trade-offs. |
+| [Evaluation](docs/EVALUATION.md) | Dated checks, evidence limits and open validation. |
+| [Privacy](docs/PRIVACY.md) | What stays local and what may leave the device. |
+| [Roadmap](docs/ROADMAP.md) | Priorities and what would count as done. |
+| [Changelog](CHANGELOG.md) | Public showcase updates. |
+
+Report reproducible interface problems through [GitHub Issues](https://github.com/jinghengxu74/campus-rhythm-app/issues), or use the optional [feedback survey](https://forms.gle/8ue3LXgotZLrxNzX9). Please remove personal calendar details. See [contribution guidance](CONTRIBUTING.md).
+
+Created by [Jingheng Xu](https://github.com/jinghengxu74). Built with Expo, React Native, Supabase and Vercel, with an OpenRouter integration. Product decisions and verification remain the maintainer's responsibility.
 
 ## License
 
-Project introduction, screenshots and guide: MIT. Product source code is not published in this repository.
+Original documentation and original project artwork in this showcase are available under the [MIT License](LICENSE). Third-party names and marks remain their owners' property. This license does not publish or license the private application source code.
