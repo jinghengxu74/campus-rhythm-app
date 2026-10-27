@@ -2,7 +2,7 @@
 
 This repository contains public product documentation and images. The main web/iOS application source is private. **Campus Rhythm To-Do Notes** (Mac sticker) is open source at [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini) — see [FORK.md](docs/FORK.md) for fork guidance.
 
-If the sticker helps you, please **star** [campus-rhythm-app](https://github.com/jinghengxu74/campus-rhythm-app) and [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini). Code PRs belong on the **To-Do Notes source** repo (`campus-rhythm-mini` is the legacy URL slug).
+Code pull requests for the Mac sticker belong on [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini). Documentation fixes can be opened on this showcase repo.
 
 ## Helpful contributions
 

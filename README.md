@@ -14,8 +14,6 @@ A proactive planner for **web**, **iOS (in development)** and a free **macOS to-
 
 **Web prototype · iOS dev build · To-Do Notes v0.9.38 · Updated 27 October 2026**
 
-⭐ If the macOS **to-do sticker** helps your day, please **[star this repo](https://github.com/jinghengxu74/campus-rhythm-app/stargazers)** and **[star campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini/stargazers)** so more students can find it.
-
 </div>
 
 **Local-first Mac sticker · Open source · Not a company** — the desktop To-Do Notes app does not upload your tasks unless you connect an account.
@@ -176,7 +174,6 @@ The immediate priorities are an unassisted new-student journey, feedback-led sim
 | [Privacy](docs/PRIVACY.md) | What stays local and what may leave the device. |
 | [Roadmap](docs/ROADMAP.md) | Priorities and what would count as done. |
 | [**Campus Rhythm To-Do Notes**](docs/CAMPUS_RHYTHM_TODO_NOTES.md) | macOS download, UI tour, local privacy. |
-| [Mac update guide](docs/MAC_MAINTAINER_UPDATES.md) | How maintainers publish new zips (not auto-push to users). |
 | [To-Do Notes privacy](docs/PRIVACY_TODO_NOTES.md) | Local storage and optional sync. |
 | [Fork the sticker](docs/FORK.md) | Ship your own branded build. |
 | [Changelog](CHANGELOG.md) | Public showcase updates. |

@@ -27,9 +27,7 @@ Disconnect account to return to device-only notes. Import merges local notes int
 
 ## Check for updates (in the app)
 
-Open **…** (top-left menu) → **Check for updates…** — opens the latest [GitHub release](https://github.com/jinghengxu74/campus-rhythm-mini/releases/latest). There is **no silent auto-update** from the menu; download the new zip and replace the app.
-
-Maintainers: see [How to publish a Mac update](MAC_MAINTAINER_UPDATES.md).
+Open **…** (top-left menu) → **Check for updates…** — opens the latest [GitHub release](https://github.com/jinghengxu74/campus-rhythm-mini/releases/latest). Download the new zip and replace the app when you choose to upgrade.
 
 ## Four tabs
 
@@ -77,7 +75,3 @@ cd campus-rhythm-mini
 zsh scripts/test.sh && zsh scripts/build.sh
 open dist/Campus\ Rhythm\ Mini.app
 ```
-
-## Star the project
-
-⭐ [campus-rhythm-app](https://github.com/jinghengxu74/campus-rhythm-app) (showcase) · ⭐ [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini) (source)
