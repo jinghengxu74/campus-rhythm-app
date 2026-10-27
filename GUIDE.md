@@ -2,7 +2,7 @@
 
 [Open the web app](https://campus-rhythm-one.vercel.app) · [Project overview](README.md)
 
-Updated 27 October 2026. The web app is a prototype. iOS screenshots show a development build, not a downloadable App Store release. **Campus Rhythm Mini** (macOS to-do sticker) is open source — see [docs/CAMPUS_RHYTHM_MINI.md](docs/CAMPUS_RHYTHM_MINI.md).
+Updated 27 October 2026. The web app is a prototype. iOS screenshots show a development build, not a downloadable App Store release. **Campus Rhythm To-Do Notes** (macOS sticker) is open source — see [docs/CAMPUS_RHYTHM_TODO_NOTES.md](docs/CAMPUS_RHYTHM_TODO_NOTES.md) and [privacy](docs/PRIVACY_TODO_NOTES.md).
 
 ## 1. Choose a workspace
 
@@ -56,11 +56,11 @@ Cloud AI requires an authenticated account and an available service. It interpre
 - Use **Undo completion** or the relevant undo control for supported recent changes. Do not assume arbitrary historical changes can always be reversed.
 - Open **Weekly review** to inspect recorded work and remaining tasks. Missing records are not evidence of inactivity or poor wellbeing.
 
-## 6. macOS — Campus Rhythm Mini (to-do sticker)
+## 6. macOS — Campus Rhythm To-Do Notes (sticker)
 
-**Campus Rhythm Mini** (*Campus Resume Sticker*) is a free macOS companion: menu-bar note, fold-to-circle, To-do / Pending / Completed / Events, and an optional account link to [web Daily notes](https://campus-rhythm-one.vercel.app/notes).
+**Campus Rhythm To-Do Notes** is a free, **local-first** macOS sticker: menu-bar note, fold-to-circle, To-do / Pending / Completed / Events. Cloud sync is **opt-in** via [web Daily notes](https://campus-rhythm-one.vercel.app/notes).
 
-1. Read [Campus Rhythm Mini install guide](docs/CAMPUS_RHYTHM_MINI.md).
+1. Read [To-Do Notes guide](docs/CAMPUS_RHYTHM_TODO_NOTES.md) and [privacy](docs/PRIVACY_TODO_NOTES.md).
 2. Download the Apple silicon zip from the showcase repo or build from [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini).
 3. After opening, use **… → Connect account** if you want the same notebook as the web app; otherwise work locally and import later.
 

@@ -2,12 +2,12 @@
 
 This log tracks the public documentation repository. It does not replace the private application's release history.
 
-## 27 October 2026 — Campus Rhythm Mini showcase
+## 27 October 2026 — To-Do Notes showcase (A+B)
 
-- Added **Campus Rhythm Mini** (macOS to-do sticker / *Campus Resume Sticker*) to the README platform table, hero badges and screenshot.
-- Published a direct **[macOS arm64 download](../assets/downloads/Campus-Rhythm-Mini-macOS-arm64-v0.9.37.zip)** and [install guide](docs/CAMPUS_RHYTHM_MINI.md).
-- Linked the new open-source repository **[campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini)** and a star call-to-action.
-- Extended the user guide and capability table for the Mac sticker.
+- Renamed public Mac product to **Campus Rhythm To-Do Notes** (desktop sticker); gallery under `assets/desktop/` (To-do, Pending, Completed, Events, floating circle).
+- Added [CAMPUS_RHYTHM_TODO_NOTES.md](docs/CAMPUS_RHYTHM_TODO_NOTES.md), [PRIVACY_TODO_NOTES.md](docs/PRIVACY_TODO_NOTES.md), [FORK.md](docs/FORK.md), [MAC_MAINTAINER_UPDATES.md](docs/MAC_MAINTAINER_UPDATES.md), [PHASE_CD_NEW_CHAT_BRIEF.md](docs/PHASE_CD_NEW_CHAT_BRIEF.md).
+- Published **[Campus-Rhythm-To-Do-Notes-macOS-arm64-v0.9.38.zip](../assets/downloads/Campus-Rhythm-To-Do-Notes-macOS-arm64-v0.9.38.zip)**; in-app **Check for updates…** points to GitHub Releases.
+- Earlier same day: first [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini) open-source release and star call-to-action.
 
 ## 21 October 2026 — documentation refresh
 
