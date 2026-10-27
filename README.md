@@ -4,11 +4,17 @@
 
 **Turn scattered commitments into one feasible next step.**
 
-A proactive planner for classes, deadlines and everyday goals.
+A proactive planner for **web**, **iOS (in development)** and a free **macOS to-do sticker**.
 
-[Try the web app](https://campus-rhythm-one.vercel.app) · [User guide](GUIDE.md) · [Architecture](docs/ARCHITECTURE.md) · [Evaluation](docs/EVALUATION.md) · [Roadmap](docs/ROADMAP.md)
+[![Try the web app](https://img.shields.io/badge/Web-try%20now-5b57d9?style=for-the-badge)](https://campus-rhythm-one.vercel.app)
+[![Download macOS sticker](https://img.shields.io/badge/macOS-download%20sticker-111111?style=for-the-badge&logo=apple)](docs/CAMPUS_RHYTHM_MINI.md)
+[![Open-source Mini](https://img.shields.io/badge/Mac-source-24292f?style=for-the-badge&logo=github)](https://github.com/jinghengxu74/campus-rhythm-mini)
 
-**Web prototype available · iOS in development · v1.1.0 · Updated 21 October 2026**
+[User guide](GUIDE.md) · [**Campus Rhythm Mini**](docs/CAMPUS_RHYTHM_MINI.md) · [Architecture](docs/ARCHITECTURE.md) · [Evaluation](docs/EVALUATION.md) · [Roadmap](docs/ROADMAP.md)
+
+**Web prototype · iOS dev build · Campus Rhythm Mini v0.9.37 · Updated 27 October 2026**
+
+⭐ If the macOS **to-do sticker** helps your day, please **[star this repo](https://github.com/jinghengxu74/campus-rhythm-app/stargazers)** and **[star campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini/stargazers)** so more students can find it.
 
 </div>
 
@@ -16,9 +22,25 @@ Campus Rhythm brings commitments into a shared calendar, suggests a useful next 
 
 Started at HKUST, with students as the first audience. The longer-term direction is everyday planning for people with tight schedules; usefulness beyond students still needs validation.
 
-> This is the public product showcase and documentation repository. Application source code is private. The web app is a working prototype; the iOS app is not an App Store or TestFlight release.
+> This is the public **product showcase** and documentation repository. The full web/iOS application source is private. **Campus Rhythm Mini** (macOS to-do sticker) is **open source** and downloadable below.
+
+## Platforms at a glance
+
+| Platform | Status | Get it |
+| --- | --- | --- |
+| **Web** | Working prototype on Vercel | [campus-rhythm-one.vercel.app](https://campus-rhythm-one.vercel.app) |
+| **iOS** | Development build (not App Store / TestFlight) | Follow the [user guide](GUIDE.md); native widgets need a dev build |
+| **macOS — Campus Rhythm Mini** | Free open-source **to-do sticker** (menu bar + glass note) | [**Download zip**](assets/downloads/Campus-Rhythm-Mini-macOS-arm64-v0.9.37.zip) · [**Source**](https://github.com/jinghengxu74/campus-rhythm-mini) · [install guide](docs/CAMPUS_RHYTHM_MINI.md) |
 
 ## See the product
+
+### macOS — Campus Rhythm Mini (*Campus Resume Sticker*)
+
+![Campus Rhythm Mini Completed tab: seven-day bar chart and completed tasks in a floating glass note](assets/mac-campus-rhythm-mini-completed-2026-10-27.png)
+
+*macOS screenshot supplied by the project owner, 27 October 2026. The menu-bar sticker folds to a circle, syncs optional Daily notes with the web app, and keeps completion history on device.*
+
+**Campus Rhythm Mini** is a lightweight companion: capture today’s list, drag tasks between days, swipe the completed chart across the last week, and fold the window into a corner while you work. Build from source or use the unsigned Apple silicon build in this repo.
 
 ### Web — Today
 
@@ -80,7 +102,8 @@ The [user guide](GUIDE.md) covers first use, imports, planning, recovery and tro
 | Execution and review | Done, progress, supported undo and weekly review. | Scheduled work is not counted as completed work. |
 | Accounts | Supabase authentication and versioned account-plan sync. | Independent new-user and multi-device acceptance remain incomplete. |
 | Native surfaces | iOS widget, Live Activity and reminder implementations. | Development build; simulator evidence does not establish physical-device reliability. |
-| Wellness | Manual records plus a read-only native Apple Health module. | Real iPhone readings and health-informed scheduling still need acceptance work. |
+| **macOS sticker** | Open-source **Campus Rhythm Mini** with local notes, optional account sync and completion chart. | Unsigned ad-hoc build; not notarized. Intel Macs are not in the published zip. |
+| Wellness | Manual records plus a read-only native Apple Health module. | Real iPhone readings and health-informed scheduling still need acceptance work. Mini does not read Health. |
 | Community | Exploratory sharing/community direction. | A complete social scheduling experience is not claimed. |
 
 ## How it works
@@ -144,6 +167,7 @@ The immediate priorities are an unassisted new-student journey, feedback-led sim
 | [Evaluation](docs/EVALUATION.md) | Dated checks, evidence limits and open validation. |
 | [Privacy](docs/PRIVACY.md) | What stays local and what may leave the device. |
 | [Roadmap](docs/ROADMAP.md) | Priorities and what would count as done. |
+| [**Campus Rhythm Mini**](docs/CAMPUS_RHYTHM_MINI.md) | macOS download, build and privacy. |
 | [Changelog](CHANGELOG.md) | Public showcase updates. |
 
 Report reproducible interface problems through [GitHub Issues](https://github.com/jinghengxu74/campus-rhythm-app/issues), or use the optional [feedback survey](https://forms.gle/8ue3LXgotZLrxNzX9). Please remove personal calendar details. See [contribution guidance](CONTRIBUTING.md).

@@ -1,6 +1,8 @@
 # Contributing and feedback
 
-This repository contains public product documentation and images. The application source is private, so application-code pull requests and a local app setup are not available here.
+This repository contains public product documentation and images. The main web/iOS application source is private, but the **macOS Campus Rhythm Mini** sticker is open source at [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini) — code contributions and stars are welcome there.
+
+If the Mac sticker or this showcase helps you, please **star** [campus-rhythm-app](https://github.com/jinghengxu74/campus-rhythm-app) and [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini) on GitHub.
 
 ## Helpful contributions
 

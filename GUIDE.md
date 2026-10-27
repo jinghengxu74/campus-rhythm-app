@@ -2,7 +2,7 @@
 
 [Open the web app](https://campus-rhythm-one.vercel.app) · [Project overview](README.md)
 
-Updated 21 October 2026. The web app is a prototype. iOS screenshots show a development build, not a downloadable App Store release.
+Updated 27 October 2026. The web app is a prototype. iOS screenshots show a development build, not a downloadable App Store release. **Campus Rhythm Mini** (macOS to-do sticker) is open source — see [docs/CAMPUS_RHYTHM_MINI.md](docs/CAMPUS_RHYTHM_MINI.md).
 
 ## 1. Choose a workspace
 
@@ -56,13 +56,23 @@ Cloud AI requires an authenticated account and an available service. It interpre
 - Use **Undo completion** or the relevant undo control for supported recent changes. Do not assume arbitrary historical changes can always be reversed.
 - Open **Weekly review** to inspect recorded work and remaining tasks. Missing records are not evidence of inactivity or poor wellbeing.
 
-## 6. Native development features
+## 6. macOS — Campus Rhythm Mini (to-do sticker)
+
+**Campus Rhythm Mini** (*Campus Resume Sticker*) is a free macOS companion: menu-bar note, fold-to-circle, To-do / Pending / Completed / Events, and an optional account link to [web Daily notes](https://campus-rhythm-one.vercel.app/notes).
+
+1. Read [Campus Rhythm Mini install guide](docs/CAMPUS_RHYTHM_MINI.md).
+2. Download the Apple silicon zip from the showcase repo or build from [campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini).
+3. After opening, use **… → Connect account** if you want the same notebook as the web app; otherwise work locally and import later.
+
+macOS builds are unsigned. Gatekeeper may require **Open Anyway** once. Data stays under `~/Library/Application Support/CampusRhythmMini/`.
+
+## 7. Native development features (iOS)
 
 iOS development builds include widget, Live Activity and notification integrations. Availability depends on the installed build and system permissions. Notifications are opt-in; review quiet hours and title-privacy settings. iOS controls widget refresh timing.
 
 Apple Health is an optional, read-only native connection for sleep, steps and exercise minutes. It is unavailable on the web. Completing the permission dialogue does not prove that every reading was granted. Missing readings remain unknown. Real physical-iPhone readings and the full native journey still need acceptance.
 
-## 7. Common problems
+## 8. Common problems
 
 | What you see | What to do |
 | --- | --- |
@@ -73,6 +83,8 @@ Apple Health is an optional, read-only native connection for sleep, steps and ex
 | A suggestion is wrong | Edit/cancel the draft before saving. Include expected versus actual behavior in a sanitized report. |
 | A change is missing on another device | Check the account and synchronization status; resolve any conflict rather than assuming a successful save. |
 | You cannot find the iOS download | No public App Store/TestFlight distribution is claimed. Use the web prototype. |
+| macOS says the app is damaged | Unsigned build: right-click → Open once, or allow in Privacy & Security. Re-download from the showcase zip if needed. |
+| Mac sticker does not sync | Confirm the same Campus Rhythm account on web and **… → Connect account** on Mac; sync is poll-based, not instant. |
 | Apple Health is empty | Check the supported native build and device permissions; do not treat empty data as a zero reading. |
 
 ## Feedback

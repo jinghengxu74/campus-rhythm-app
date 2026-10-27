@@ -2,6 +2,13 @@
 
 This log tracks the public documentation repository. It does not replace the private application's release history.
 
+## 27 October 2026 — Campus Rhythm Mini showcase
+
+- Added **Campus Rhythm Mini** (macOS to-do sticker / *Campus Resume Sticker*) to the README platform table, hero badges and screenshot.
+- Published a direct **[macOS arm64 download](../assets/downloads/Campus-Rhythm-Mini-macOS-arm64-v0.9.37.zip)** and [install guide](docs/CAMPUS_RHYTHM_MINI.md).
+- Linked the new open-source repository **[campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini)** and a star call-to-action.
+- Extended the user guide and capability table for the Mac sticker.
+
 ## 21 October 2026 — documentation refresh
 
 - Replaced the small mixed web/mobile presentation with the owner's latest full-resolution desktop Today screenshot.
