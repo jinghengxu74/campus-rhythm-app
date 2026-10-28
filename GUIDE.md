@@ -2,7 +2,7 @@
 
 [Open the web app](https://campus-rhythm-one.vercel.app) · [Project overview](README.md)
 
-Updated 27 October 2026. The web app is a prototype. iOS screenshots show a development build, not a downloadable App Store release. **Campus Rhythm To-Do Notes** (macOS sticker) is open source — see [docs/CAMPUS_RHYTHM_TODO_NOTES.md](docs/CAMPUS_RHYTHM_TODO_NOTES.md) and [privacy](docs/PRIVACY_TODO_NOTES.md).
+Updated 29 October 2026. The web app is a prototype. iOS screenshots show a development build, not a downloadable App Store release. **Campus Rhythm To-Do Notes** (macOS sticker) is open source — see [docs/CAMPUS_RHYTHM_TODO_NOTES.md](docs/CAMPUS_RHYTHM_TODO_NOTES.md) and [privacy](docs/PRIVACY_TODO_NOTES.md).
 
 ## 1. Choose a workspace
 

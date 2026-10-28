@@ -12,7 +12,7 @@ A proactive planner for **web**, **iOS (in development)** and a free **macOS to-
 
 [User guide](GUIDE.md) · [**Campus Rhythm To-Do Notes**](docs/CAMPUS_RHYTHM_TODO_NOTES.md) · [Architecture](docs/ARCHITECTURE.md) · [Evaluation](docs/EVALUATION.md) · [Roadmap](docs/ROADMAP.md)
 
-**Web prototype · iOS dev build · To-Do Notes v0.9.38 · Updated 27 October 2026**
+**Web prototype · iOS dev build · To-Do Notes v0.9.58 · Updated 29 October 2026**
 
 </div>
 
@@ -20,7 +20,7 @@ A proactive planner for **web**, **iOS (in development)** and a free **macOS to-
 
 Campus Rhythm brings commitments into a shared calendar, suggests a useful next action, and helps you record what actually gets done. A deadline tells you **when work is due**; a work session tells you **when you will do it**. The product keeps those two things separate.
 
-Started at HKUST, with students as the first audience. The longer-term direction is everyday planning for people with tight schedules; usefulness beyond students still needs validation.
+Built by a solo student developer in Hong Kong, with students as the first audience. The longer-term direction is everyday planning for people with tight schedules; usefulness beyond students still needs validation.
 
 > This is the public **product showcase** and documentation repository. The full web/iOS application source is private. **Campus Rhythm To-Do Notes** (macOS desktop sticker) is **open source**, **local-first**, and downloadable below.
 
@@ -30,7 +30,7 @@ Started at HKUST, with students as the first audience. The longer-term direction
 | --- | --- | --- |
 | **Web** | Working prototype on Vercel | [campus-rhythm-one.vercel.app](https://campus-rhythm-one.vercel.app) |
 | **iOS** | Development build (not App Store / TestFlight) | Follow the [user guide](GUIDE.md); native widgets need a dev build |
-| **macOS — To-Do Notes sticker** | Free open-source floating note (menu bar + glass window) | [**Download zip**](assets/downloads/Campus-Rhythm-To-Do-Notes-macOS-arm64-v0.9.38.zip) · [**Source**](https://github.com/jinghengxu74/campus-rhythm-mini) · [full guide](docs/CAMPUS_RHYTHM_TODO_NOTES.md) |
+| **macOS — To-Do Notes sticker** | Free open-source floating note (menu bar + glass window) | [**Download zip**](https://github.com/jinghengxu74/campus-rhythm-mini/releases/latest/download/Rhythm-Note-macOS-arm64.zip) · [**Source**](https://github.com/jinghengxu74/campus-rhythm-mini) · [full guide](docs/CAMPUS_RHYTHM_TODO_NOTES.md) |
 
 ## See the product
 
@@ -46,7 +46,7 @@ A **local-first** sticky note for Mac: **To-do**, **Pending**, **Completed** (wi
 | --- | --- |
 | ![Folded sticker](assets/desktop/floating-circle.png) | ![To-do dark](assets/desktop/todo-dark.png) |
 
-[**Feature tour & privacy**](docs/CAMPUS_RHYTHM_TODO_NOTES.md) · [**Download v0.9.38**](assets/downloads/Campus-Rhythm-To-Do-Notes-macOS-arm64-v0.9.38.zip) · In-app **… → Check for updates…**
+[**Feature tour & privacy**](docs/CAMPUS_RHYTHM_TODO_NOTES.md) · [**Download v0.9.58**](https://github.com/jinghengxu74/campus-rhythm-mini/releases/latest/download/Rhythm-Note-macOS-arm64.zip) · In-app **… → Check for updates…**
 
 ### Web — Today
 
@@ -89,6 +89,8 @@ The design goal is lower planning effort. Reduced stress, better grades and impr
 
 **Illustrative example:** a task needs two hours before Friday, but Thursday contains fixed classes. The intended flow is to review feasible preparation sessions, confirm them, then record actual progress. This example describes the workflow; it is not a measured scheduling benchmark.
 
+[Mac installation and Apple security warning guide](docs/MAC_INSTALL.md)
+
 ## Try it
 
 1. Open the [web app](https://campus-rhythm-one.vercel.app). Use Google/email sign-in for an account workspace, or Local mode where offered.
@@ -108,7 +110,7 @@ The [user guide](GUIDE.md) covers first use, imports, planning, recovery and tro
 | Execution and review | Done, progress, supported undo and weekly review. | Scheduled work is not counted as completed work. |
 | Accounts | Supabase authentication and versioned account-plan sync. | Independent new-user and multi-device acceptance remain incomplete. |
 | Native surfaces | iOS widget, Live Activity and reminder implementations. | Development build; simulator evidence does not establish physical-device reliability. |
-| **macOS To-Do Notes** | Open-source sticker: local notes by default, optional account sync, completion chart, Events tab. | Unsigned ad-hoc build; not notarized. Intel Macs are not in the published zip. |
+| **macOS To-Do Notes** | Open-source sticker: local notes by default, optional account sync, completion chart, Events tab. | Ad-hoc signed build; not notarized. Intel Macs are not in the published zip. |
 | Wellness | Manual records plus a read-only native Apple Health module. | Real iPhone readings and health-informed scheduling still need acceptance work. To-Do Notes does not read Health. |
 | Community | Exploratory sharing/community direction. | A complete social scheduling experience is not claimed. |
 

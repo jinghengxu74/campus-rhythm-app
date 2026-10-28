@@ -6,7 +6,7 @@
 
 | | |
 | --- | --- |
-| **Apple silicon zip** | [Campus-Rhythm-To-Do-Notes-macOS-arm64-v0.9.38.zip](../assets/downloads/Campus-Rhythm-To-Do-Notes-macOS-arm64-v0.9.38.zip) |
+| **Apple silicon zip** | [Campus-Rhythm-To-Do-Notes-macOS-arm64-v0.9.58.zip](https://github.com/jinghengxu74/campus-rhythm-mini/releases/latest/download/Rhythm-Note-macOS-arm64.zip) |
 | **Source (MIT)** | [github.com/jinghengxu74/campus-rhythm-mini](https://github.com/jinghengxu74/campus-rhythm-mini) |
 | **Releases** | [Latest GitHub release](https://github.com/jinghengxu74/campus-rhythm-mini/releases/latest) |
 
@@ -33,7 +33,7 @@ Open **…** (top-left menu) → **Check for updates…** — opens the latest [
 
 ### To-do
 
-Day-scoped tasks for the date in the header (`< Oct 21, Wed >`). Categories (study, personal, work), drag reorder, voice capture, per-task colors. Tasks carry forward until you **Mark complete**.
+Day-scoped tasks for the date in the header (`< Oct 21, Wed >`). Categories (study, personal, work), drag reorder, per-task colors. Tasks carry forward until you **Mark complete**. Completed tab includes a 7-day chart (two-finger horizontal scroll) and tap-a-day to jump the done list.
 
 ![To-do — light theme](../assets/desktop/todo-light.png)
 
